@@ -207,6 +207,8 @@ function addClassSelectDay() {
         $('.checkIn').find('.check_in_out_p').html('체크인');
         $('.checkOut').find('.check_in_out_p').html('체크아웃');
     }
+
+     console.log(parseInt(checkOutDate)-parseInt(checkInDate));
 }
 
 // 달력 날짜 클릭
@@ -287,14 +289,20 @@ function selectDay(obj) {
 // 체크인 날짜 표기
 function getCheckIndateHtml() {
     checkInDate = checkInDate.toString();
+    console.log(checkInDate);
     return checkInDate.substring('0', '4') + "-" + checkInDate.substring('4', '6') + "-" + checkInDate.substring('6', '8') + " ( " + strWeekDay(weekday(checkInDate)) + " )";
 }
 
 // 체크아웃 날짜 표기
 function getCheckOutdateHtml() {
     checkOutDate = checkOutDate.toString();
+    console.log(checkOutDate);
     return checkOutDate.substring('0', '4') + "-" + checkOutDate.substring('4', '6') + "-" + checkOutDate.substring('6', '8') + " ( " + strWeekDay(weekday(checkOutDate)) + " )";
 }
+
+
+
+
 
 // 체크인 날짜 클릭시 예약 가능한 마지막 날인지 체크 마지막날 일경우 체크아웃 날짜 자동 선택
 function lastCheckInDate() {
