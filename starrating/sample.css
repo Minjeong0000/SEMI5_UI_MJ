@@ -1,0 +1,70 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* 스크롤바 숨기기 */
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 300px auto 1fr;
+    width: 430px;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox에서 스크롤바 숨기기 */
+}
+
+.container::-webkit-scrollbar {
+    display: none; /* 웹킷 기반 브라우저에서 스크롤바 숨기기 */
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.homepage-image {
+    background-color: #666;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 300px;
+}
+.homepage-image image{
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 60px; /* 헤더의 높이만큼 top 값을 설정 */
+    z-index: 999;
+}
+
+.main-content {
+    background-color: #888;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 500px;
+}
+
+.item{
+    width: 100%;
+    height: 600px;
+    background-color: chocolate;
+}

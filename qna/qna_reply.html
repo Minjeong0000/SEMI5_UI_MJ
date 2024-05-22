@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qna답글달기</title>
+    <link rel="stylesheet" href="./qna_reply.css">
+    <link rel="stylesheet" href="qna_insert.css"> <!-- qna_insert.css의 스타일을 재사용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu"><a href="home">메인</a></div>
+        <div class="menu"><a href="">메뉴</a></div>
+    </header>
+
+
+    <main>
+        <section class="qna-container">
+            <h2>게시글 상세보기</h2>
+            <div class="qna-wrap">
+                <div class="post-details">
+                    <div class="detail-item">
+                        <h4>(게시글제목)회원가입했습니다~</h4>
+                    </div>
+                    <div class="detail-info">
+                      <span>
+                        닉네임: 쎈둥이
+                      </span>
+                      <span>
+                        작성 일시: 2024-05-19
+                      </span>
+                      <span>
+                      카테고리: 회원
+                      </span>
+                    </div>
+                    
+                  </div>
+                  <div class="content-wrap">
+                      <p id="content">게시글 내용~~~~~~</p>
+                  </div>
+            </div>
+            <br>
+            <div class="button-wrap">
+                <!-- <button class="edit-delete">수정</button>
+                <button class="edit-delete">삭제</button> -->
+            </div>
+            <br><br>
+            <hr>
+            <h2>답글 작성하기</h2>
+            <div class="qna-wrap">
+                <form id="qnaForm" action="" method="post">
+                    <div class="form-group">
+                        <label for="title">제목</label>
+                        <input type="text" id="title" name="title" placeholder="제목을 입력하세요" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">내용</label>
+                        <textarea id="content" name="content" rows="8" placeholder="내용을 입력하세요" required></textarea>
+                    </div>
+                    <div class="button-wrap">
+                        <button type="submit">작성하기</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2024. 함께하개 All Rights Reserved</p>
+    </footer>
+</body>
+</html>

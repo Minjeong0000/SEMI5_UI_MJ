@@ -1,0 +1,94 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  body{
+    height: 100vh;
+    width: 430px;
+    margin: 0 auto;
+    border: 1px solid #ccc; 
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #334D8F;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* 기존 CSS 코드 유지 */
+  
+  
+  .tabs {
+      margin-bottom: 0px;
+      display: flex;
+  }
+  
+  .tab {
+    width: 100px;
+      padding: 10px 20px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      font-size: 14px;
+      color: #333;
+      outline: none;
+      flex-grow: 1;
+      text-align: center;
+  }
+  
+  .tab.active {
+      background-color: #007bff;
+      color: #fff;
+  }
+  
+  .tab:not(.active):hover {
+      background-color: #f0f0f0;
+  }

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stay-detail-review</title>
+    <link rel="stylesheet" href="../stay_detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./stay_detail.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div  class="menu">
+            <a href="마이페이지로 이동" class="mypage">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="홈화면" class="mypage">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
+    </header>
+    <div class="stay-image-wrap">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnMj8FOO2OqwxypwjRIsHXIDpt3B951vXdIqccqABDujSZxOYN" alt="숙소메인사진">
+    </div>
+    <div class="business-info">
+        <div class="stay-name">강화도씨사이드힐캠핑장</div>
+        <div class="stay-category">캠핑,야영장</div>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="">
+                    <div>홈</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div><span>리뷰</span> <span>(5)</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>사진</div>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    <main class="main-content">
+        <section class="review_container">
+                <h3 style="color: rgb(65, 65, 65);">이런 점이 좋았어요</h3>
+                <div class="review-info">
+                    <!-- <div class="stay-info-container"> -->
+                    <div class="evaluation-container">
+                        <!-- jsp에서 반복문 -->
+                            <span class="evaluation">🌃뷰가 좋아요</span>
+                            <span class="evaluation">🚽화장실이 잘 되어있어요</span>
+                            <span class="evaluation">⭐깨끗해요</span>
+                            <span class="evaluation">🤫조용히 쉬기 좋아요</span>
+                            <span class="evaluation">🚿온수가 잘 나와요</span>
+                            <span class="evaluation">📸사진이 잘 나와요</span>
+                            <span class="evaluation">🚗주차하기 편해요</span>
+                            <span class="evaluation">⛵물놀이하기 좋아요</span>
+
+                    </div>
+                </div>
+                
+                <h3 style="color: rgb(65, 65, 65);">리뷰</h3>
+
+                <div class="review-wrap">
+                     <!--jsp에서 반복문-->
+                    <div class="user-review">
+                        <div class="review-detail">
+                            <div class="profile-nick">
+                                <span class="profile-pic">
+                                    <img src="../stay_detail_photo/가나디.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="box">
+                                <div class="item">
+                                    <span>별점</span>
+                                    <div>
+                                        <!-- 수정삭제버튼 jsp에서 c:if로 로그인회원인지/관리자인지 검사 -->
+                                        <button onclick="location.href = '/app/board/edit?no=${vo.no}'" hidden>수정</button>
+                                        <button onclick="" hidden>삭제</button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span>닉네임</span>
+                                    <span> 작성일:2024-05-21</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-content-wrap">
+                            <!-- 리뷰이미지 가로스크롤 -->
+                            <div class="review-img-container">
+                                <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjEwMTBfMjYg%2FMDAxNjY1MzcxODMwNTcy.Q_LszEI1maMeuUde3BveY_k-5WBRAB2Ep7rADwBDFawg.LmUqt9p_3R-ZOLb67TkZtfiK_cX0jTFAHOQXvJ81sm8g.JPEG%2F1ED8DE52-EC32-4F6B-9730-564D6FB36C8D.jpeg%3Ftype%3Dw1500_60_sharpen" alt="">
+                                <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjEwMTBfMjYg%2FMDAxNjY1MzcxODMwNTcy.Q_LszEI1maMeuUde3BveY_k-5WBRAB2Ep7rADwBDFawg.LmUqt9p_3R-ZOLb67TkZtfiK_cX0jTFAHOQXvJ81sm8g.JPEG%2F1ED8DE52-EC32-4F6B-9730-564D6FB36C8D.jpeg%3Ftype%3Dw1500_60_sharpen" alt="">
+                                <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjEwMTBfMjYg%2FMDAxNjY1MzcxODMwNTcy.Q_LszEI1maMeuUde3BveY_k-5WBRAB2Ep7rADwBDFawg.LmUqt9p_3R-ZOLb67TkZtfiK_cX0jTFAHOQXvJ81sm8g.JPEG%2F1ED8DE52-EC32-4F6B-9730-564D6FB36C8D.jpeg%3Ftype%3Dw1500_60_sharpen" alt="">
+
+                            </div>
+                            <div class="reveiw-content">
+                                
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit labore placeat autem dolorem ut accusantium necessitatibus totam nisi quod asperiores sit corrupti laudantium nihil, inventore atque quasi modi cumque eius!
+
+                            </div>
+                        </div>
+                        <div class="user-evaluation">
+                            <span class="evaluation">🚿온수가 잘 나와요</span>
+                            <span class="evaluation">📸사진이 잘 나와요</span>
+                            <span class="evaluation">🚗주차하기 편해요</span>
+                            <span class="evaluation">⛵물놀이하기 좋아요</span>
+
+                        </div>
+                    </div>
+                    <div class="user-review">
+                        <div class="review-detail">
+                            <div class="profile-nick">
+                                <span class="profile-pic">
+                                    <img src="../stay_detail_photo/가나디.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="box">
+                                <div class="item">
+                                    <span>별점</span>
+                                    <div>
+                                        <!-- 수정삭제버튼 jsp에서 c:if로 로그인회원인지/관리자인지 검사 -->
+                                        <button onclick="location.href = '/app/board/edit?no=${vo.no}'" hidden>수정</button>
+                                        <button onclick="" hidden>삭제</button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span>닉네임</span>
+                                    <span> 작성일:2024-05-21</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-content-wrap">
+                            <div class="review-img-container">
+                                <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjEwMTBfMjYg%2FMDAxNjY1MzcxODMwNTcy.Q_LszEI1maMeuUde3BveY_k-5WBRAB2Ep7rADwBDFawg.LmUqt9p_3R-ZOLb67TkZtfiK_cX0jTFAHOQXvJ81sm8g.JPEG%2F1ED8DE52-EC32-4F6B-9730-564D6FB36C8D.jpeg%3Ftype%3Dw1500_60_sharpen" alt="">
+                                <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjEwMTBfMjYg%2FMDAxNjY1MzcxODMwNTcy.Q_LszEI1maMeuUde3BveY_k-5WBRAB2Ep7rADwBDFawg.LmUqt9p_3R-ZOLb67TkZtfiK_cX0jTFAHOQXvJ81sm8g.JPEG%2F1ED8DE52-EC32-4F6B-9730-564D6FB36C8D.jpeg%3Ftype%3Dw1500_60_sharpen" alt="">
+                                <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjEwMTBfMjYg%2FMDAxNjY1MzcxODMwNTcy.Q_LszEI1maMeuUde3BveY_k-5WBRAB2Ep7rADwBDFawg.LmUqt9p_3R-ZOLb67TkZtfiK_cX0jTFAHOQXvJ81sm8g.JPEG%2F1ED8DE52-EC32-4F6B-9730-564D6FB36C8D.jpeg%3Ftype%3Dw1500_60_sharpen" alt="">
+
+                            </div>
+                            <div class="reveiw-content">
+                                
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit labore placeat autem dolorem ut accusantium necessitatibus totam nisi quod asperiores sit corrupti laudantium nihil, inventore atque quasi modi cumque eius!
+
+                            </div>
+                        </div>
+                        <div class="user-evaluation">
+                            <span class="evaluation">🚿온수가 잘 나와요</span>
+                            <span class="evaluation">📸사진이 잘 나와요</span>
+                            <span class="evaluation">🚗주차하기 편해요</span>
+                            <span class="evaluation">⛵물놀이하기 좋아요</span>
+                            <span class="evaluation">🌃뷰가 좋아요</span>
+
+                        </div>
+                    </div>
+
+               
+                </div>
+                
+                
+
+               
+           
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2024. 함께하개 All Rights Reserved</p>
+    </footer>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    
+</body>
+</html>

@@ -1,0 +1,255 @@
+
+
+/* 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: 40px auto 50px;
+    height: 100vh;
+    width: 430px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+  }
+  
+  /* 헤더 스타일 */
+  header {
+    background-color: #334D8F;
+    color: white;
+    padding: 0 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .SchBox {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #334D8F;
+  }
+  
+  header .SchBox form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+  }
+  
+  header .menu {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: azure;
+  }
+  
+  /* 네비게이션 스타일 */
+  nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: none;
+  }
+  
+  nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    font-size: 0.7em;
+  }
+  
+  nav ul li a:hover {
+    background-color: #111;
+  }
+  
+  /* 메인 콘텐츠 스타일 */
+  main {
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main section {
+    flex: 1;
+  }
+  
+  /* 푸터 스타일 */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 0.5em;
+  }
+  
+  .page-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .page-area {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  
+  .page-area a {
+    text-decoration: none;
+  }
+  
+  
+  /* ========질문작성css========= */
+  /* main section 스타일 */
+  /* qna_insert.css */
+  /* 이 부분은 별도의 CSS 파일에 저장해 사용 */
+  
+  /* 질문 작성하기 페이지의 스타일 */
+  .qna-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  
+  }
+  
+  .qna-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .qna-wrap {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #334D8F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #293e6a;
+  }
+  
+  /* 게시글 상세보기 페이지의 스타일 */
+  .post-details {
+    width: 100%;
+    margin: 0 auto;
+    display: grid; /* 요소들을 가로로 배열 */
+    grid-template-rows: 1.5fr 1fr;
+  }
+  
+  .detail-item {
+    margin-bottom: 15px;
+    margin-right: 20px; /* 각 요소 사이에 간격을 주기 위해 오른쪽 마진 추가 */
+  }
+  
+  .detail-item label {
+    font-weight: bold;
+    font-size: 0.8em; /* 작은 글씨로 설정 */
+  }
+  
+  .detail-item p {
+    margin-top: 5px;
+    font-size: 0.8em; /* 작은 글씨로 설정 */
+  }
+  
+  .detail-item p.content {
+    font-size: 1em; /* 원래 크기로 설정 */
+  }
+  .content-wrap{
+    border-top: 1px solid gray;
+    padding-top: 20px;
+  }
+  .detail-info{
+    font-size: 0.7em;
+  }
+  .detail-info>span{
+    padding-right: 2px;
+    padding-left: 1px;
+    border-right: 1px solid gray;
+  }
+  
+  .edit-delete{
+    background-color: #334D8F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .edit-delete:hover{
+    background-color: #293e6a;
+  }
+  .button-wrap{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 10px;
+  }

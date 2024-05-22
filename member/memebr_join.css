@@ -1,0 +1,405 @@
+/* 배경색 */
+body {background-color: #334d8f
+}
+
+/* 메인 div */
+
+#main {  
+width: 80%;
+height: 100vh;         /* vh는 % 같은 개념 */
+margin: 0 auto;       /* 가운데 정렬 */ 
+margin-top: 160px;
+border-radius: 15px;
+background: #FFFFFF;
+
+#nameT {
+
+  position: absolute;
+width: 400px;
+height: 50px;
+left: 200px;
+top: 160px;
+
+}
+
+#nickNameT {
+
+  position: absolute;
+width: 400px;
+height: 50px;
+left: 200px;
+top: 280px;
+
+}
+
+
+#idT {
+
+  position: absolute;
+width: 400px;
+height: 50px;
+left: 200px;
+top: 400px;
+
+}
+
+#pwdT {
+
+  position: absolute;
+width: 400px;
+height: 50px;
+left: 200px;
+top: 520px;
+
+}
+
+#pwdCheckT {
+
+  position: absolute;
+width: 400px;
+height: 50px;
+left: 200px;
+top: 640px;
+
+}
+
+#phoneNumT {
+
+  position: absolute;
+width: 400px;
+height: 50px;
+left: 200px;
+top: 760px;
+
+}
+
+#E-mailT {
+
+  position: absolute;
+width: 400px;
+height: 50px;
+left: 200px;
+top: 880px;
+
+}
+
+#birthT {
+
+  position: absolute;
+width: 400px;
+height: 50px;
+left: 200px;
+top: 1000px;
+
+}
+
+#addressT {
+
+  position: absolute;
+width: 400px;
+height: 50px;
+left: 200px;
+top: 1120px;
+
+}
+
+
+#petInfoT {
+
+  position: absolute;
+width: 400px;
+height: 50px;
+left: 200px;
+top: 1240px;
+
+}
+
+/* 제목 */
+#title {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 정확한 중앙 정렬 */
+  
+}
+
+/* 뒤로가기 */
+#backbtn {
+position: absolute;
+width: 30px;
+height: 30px;
+left: 5px;
+top: 90px;
+}
+
+
+
+
+}
+
+/* 이름 */
+#name {
+box-sizing: border-box;
+
+position: absolute;
+width: 400px;
+height: 50px;
+left: 200px;
+top: 230px;
+
+background: #FFFFFF;
+border: 1px solid #969696;
+border-radius: 5px;
+}
+
+/* 닉네임 */
+#nickname {
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  left: 200px;
+  top: 350px;
+  
+  background: #FFFFFF;
+  border: 1px solid #969696;
+  border-radius: 5px;
+  }
+
+ /* 닉네임 중복체크 */
+  #checkbtn1 {
+
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 650px;
+    top: 350px;
+
+    border-radius: 5px;
+  }
+
+  /*----------------------------------------------------------------- */
+
+/* 아이디 */
+  #id {
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 200px;
+    top: 470px;
+    
+    background: #FFFFFF;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    }
+
+     /* 닉네임 중복체크 */
+    #checkbtn2 {
+
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      left: 650px;
+      top: 470px;
+      border-radius: 5px;
+    }
+
+/* 비밀번호 */
+    #pwd {
+      box-sizing: border-box;
+      
+      position: absolute;
+      width: 400px;
+      height: 50px;
+      left: 200px;
+      top: 590px;
+      
+      background: #FFFFFF;
+      border: 1px solid #969696;
+      border-radius: 5px;
+      }
+
+/* 비밀번호 확인 */
+      #pwdCheck {
+        box-sizing: border-box;
+        
+        position: absolute;
+        width: 400px;
+        height: 50px;
+        left: 200px;
+        top: 710px;
+        
+        background: #FFFFFF;
+        border: 1px solid #969696;
+        border-radius: 5px;
+        }
+
+/* 휴대폰번호 */
+        #phoneNum {
+          box-sizing: border-box;
+          
+          position: absolute;
+          width: 400px;
+          height: 50px;
+          left: 200px;
+          top: 830px;
+          
+          background: #FFFFFF;
+          border: 1px solid #969696;
+          border-radius: 5px;
+          }
+
+/* 이메일 */
+          #email {
+            box-sizing: border-box;
+            
+            position: absolute;
+            width: 400px;
+            height: 50px;
+            left: 200px;
+            top: 950px;
+            
+            background: #FFFFFF;
+            border: 1px solid #969696;
+            border-radius: 5px;
+            }
+
+/* 이메일 도메인 주소 */
+            #mailDomain {
+              box-sizing: border-box;
+              
+              position: absolute;
+              width: 400px;
+              height: 50px;
+              left: 650px;
+              top: 950px;
+              
+              background: #FFFFFF;
+              border: 1px solid #969696;
+              border-radius: 5px;
+              }
+  
+  
+/* 생년월일 */
+#birthday {
+ 
+              
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  left: 200px;
+  top: 1070px;
+  
+  background: #FFFFFF;
+  border: 1px solid #969696;
+  border-radius: 5px;
+
+
+
+}
+
+/* 주소 */
+#address {
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 600px;
+  height: 50px;
+  left: 200px;
+  top: 1190px;
+  
+  background: #FFFFFF;
+  border: 1px solid #969696;
+  border-radius: 5px;
+
+}
+
+/* 반려견 정보 입력 */
+/*성별*/
+#gender {
+
+box-sizing: border-box;
+              
+position: absolute;
+width: 100px;
+height: 50px;
+left: 200px;
+top: 1310px;
+
+background: #FFFFFF;
+border: 1px solid #969696;
+border-radius: 5px;
+
+}
+
+/*몸무게*/
+#weight {
+
+  box-sizing: border-box;
+              
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  left: 400px;
+  top: 1310px;
+  
+  background: #FFFFFF;
+  border: 1px solid #969696;
+  border-radius: 5px;
+
+}
+
+/*나이*/
+#age {
+
+  box-sizing: border-box;
+              
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  left: 600px;
+  top: 1310px;
+  
+  background: #FFFFFF;
+  border: 1px solid #969696;
+  border-radius: 5px;
+
+}
+
+/*회원가입 버튼*/
+#join {
+
+  box-sizing: border-box;
+              
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  left: 450px;
+  top: 1400px;
+  
+  background: #FFFFFF;
+  border: 1px solid #969696;
+  border-radius: 5px;
+
+}
+
+/*뒤로가기 버튼*/ 
+#back {
+
+  box-sizing: border-box;
+              
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  left: 850px;
+  top: 1400px;
+  
+  background: #FFFFFF;
+  border: 1px solid #969696;
+  border-radius: 5px;
+
+}

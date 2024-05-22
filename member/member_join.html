@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="./memebr_join.css">
+  <script type="text/javascript" src="/회원가입.js"></script>
+  
+</head>
+<body>
+  
+<h1 id="title"> 회원가입 </h1>
+
+<button id="backbtn"></button>
+
+<div id="main">
+
+<input id="name" input type="text" autofocus placeholder="이름을 입력해주세요."></input>
+<input id="nickname" input type="text" autofocus placeholder="닉네임을 입력해주세요."></input>
+
+<div> 
+
+  <input type="button" id="checkbtn1" value="중복체크"></input>
+  
+  <input type="button" id="checkbtn2" value="중복체크"></input>
+
+
+<input id="id" input type="text" autofocus placeholder="아이디를 입력해주세요.   (6~20자)"></input>
+<input id="pwd" input type="password" autofocus placeholder="비밀번호를 입력해주세요. (문자,숫자 포함 8자이상 ~ 20자이상)"></input>
+<input id="pwdCheck" input type="password" autofocus placeholder="비밀번호를 재입력해주세요."></input>
+<input id="phoneNum" input type="text" autofocus placeholder="휴대폰 번호 입력 ('-')제외 11자리 입력"></input>
+<!-- <input id="email" input type="text" autofocus placeholder="E-mail 입력"></input> -->
+
+</input>
+<!-- 이메일 입력 -->
+<input class="box" id="email" type="text" placeholder="E-mail 입력">
+<select class="box" id="mailDomain">
+  <option value="type" type="text">직접 입력</option>
+  <option value="naver.com">naver.com</option>
+  <option value="google.com">google.com</option>
+  <option value="hanmail.net">hanmail.net</option>
+  <option value="kakao.com">kakao.com</option>
+</select>
+
+<!-- 생년월일 입력-->
+<label for="date" id="birthday">생년월일을 선택하세요.
+  <input type="date"
+         id="date"
+         max="2005-05-17"
+         min="1900-01-01"
+         value="1995-01-01">
+</label>
+
+<!-- 주소 입력 -->
+<input id="address" input type="text" autofocus placeholder="주소를 입력해주세요."></input>
+
+
+<!-- 반려견 정보 입력 -->
+
+<!-- 성별 -->
+<select class="box" id="gender">
+<option value="암">암</option>
+<option value="수">수</option>
+</select>
+
+<!-- 몸무게 -->
+<select class="box" id="weight">
+  <option value="소형">소형</option>
+  <option value="중형">중형</option>
+  <option value="대형">대형</option>
+  </select>
+
+<!-- 나이 -->
+<select class="box" id="age">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+</select>
+
+<!-- 회원가입 버튼 -->
+<input type="button" id="join" value="회원가입"></input>
+<input type="button" id="back" value="뒤로가기"></input>
+
+<h1 id="nameT">이름</h1>
+<h1 id="nickNameT">닉네임</h1>
+<h1 id="idT">아이디</h1>
+<h1 id="pwdT">비밀번호</h1>
+<h1 id="pwdCheckT">비밀번호 확인</h1>
+<h1 id="phoneNumT">휴대폰 번호</h1>
+<h1 id="E-mailT">E-mail</h1>
+<h1 id="birthT">생년월일</h1>
+<h1 id="addressT">주소</h1>
+<h1 id="petInfoT">반려견 정보</h1>
+
+
+
+
+
+
+
+</div>
+
+</html>
+</body>
