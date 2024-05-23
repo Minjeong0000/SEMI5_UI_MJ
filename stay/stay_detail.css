@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Noto Sans KR', sans-serif;
+  --blue: #3f99ff;
 }
 body {
   background-color: #ffffff;
@@ -37,7 +38,8 @@ header a {
   /* z-index: 2000; */
 }
 
-.stay-image-wrap{
+/* 숙소메인페이지,객실상세-예약이미지 */
+.stay-image-wrap ,.reservation-img-wrap{
   width: 100%;
   height: 200px;
   overflow: hidden;
@@ -46,6 +48,11 @@ header a {
   background-repeat: no-repeat; /* 이미지를 반복하지 않게 합니다 */
 }
 .stay-image-wrap img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.reservation-img-wrap img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -489,3 +496,250 @@ justify-content: space-between;
       border-radius: 10px;
       padding: 5px;
     }
+
+    /* 달력 */
+
+
+    /* Calendar ---------------------------------------------------- */
+.calendar-wrap {
+ width: 100%;
+  padding-top: 0px;
+  margin: 0 auto;
+  font-family: "NanumSquareR";
+  display: flex;
+  gap: 2%;
+  flex-direction: column;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.calendar-middle-wrap {
+  border-radius: 10px;
+  background: #fffefa;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.checkInOutInfo {
+  width: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fafbfa;
+  position: relative;
+}
+
+.calendar-wrap .cal_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 78px;
+}
+
+.calendar-wrap .cal_nav .year-month {
+  width: 300px;
+  text-align: center;
+  line-height: 1;
+  font-size: 20px;
+}
+
+.calendar-wrap .cal_nav .nav {
+  display: flex;
+  border: 1px solid #333333;
+  border-radius: 5px;
+}
+
+.calendar-wrap .cal_nav .go-prev,
+.calendar-wrap .cal_nav .go-next {
+  display: block;
+  width: 50px;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-wrap .cal_nav .go-prev::before,
+.calendar-wrap .cal_nav .go-next::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-width: 3px 3px 0 0;
+  transition: border 0.1s;
+}
+
+.calendar-wrap .cal_nav .go-prev::before {
+  transform: rotate(-135deg);
+}
+
+.calendar-wrap .cal_nav .go-next::before {
+  transform: rotate(45deg);
+}
+
+.calendar-wrap .cal_wrap {
+  padding-top: 40px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.calendar-wrap .cal_wrap::after {
+  top: 368px;
+}
+
+.calendar-wrap .cal_wrap .dates {
+  display: flex;
+  flex-flow: wrap;
+  height: 290px;
+}
+
+.calendar-wrap .cal_wrap .days {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.calendar-wrap .cal_wrap .day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 7);
+  text-align: left;
+  color: #2d1d0b;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.calendar-wrap .cal_wrap .day span {
+  z-index: 5;
+}
+
+.calendar-wrap .cal_wrap .day .check_in_out_p {
+  position: absolute;
+  left: 50%;
+  top: 47px;
+  transform: translateX(-50%);
+  font-size: 12px;
+  width: 100%;
+  color: var(--blue);
+}
+
+.calendar-wrap .cal_wrap .checkIn span {
+  color: #fff;
+}
+
+.calendar-wrap .cal_wrap .checkOut span {
+  color: #fff;
+}
+
+.calendar-wrap .cal_wrap .selectDay {
+  position: relative;
+}
+
+.calendar-wrap .cal_wrap .selectDay::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 30px;
+  background: #c3defc;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.calendar-wrap .cal_wrap .checkIn.selectDay::before {
+  left: 50%;
+  width: 50%;
+}
+
+.calendar-wrap .cal_wrap .checkOut.selectDay::before {
+  width: 50%;
+}
+
+.calendar-wrap .cal_wrap .checkIn::after,
+.calendar-wrap .cal_wrap .checkOut::after,
+.calendar-wrap .cal_wrap .checkIn::after {
+  content: '';
+  background: var(--blue);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.calendar-wrap .cal_wrap .day:nth-child(7n -6) {
+  color: #ed2a61;
+}
+
+.calendar-wrap .cal_wrap .day:nth-child(7n) {
+  color: #3c6ffa;
+}
+
+.calendar-wrap .cal_wrap .day.disable {
+  color: #ddd;
+}
+
+.current.today {
+  background: rgb(242 242 242);
+}
+
+.checkInOutInfo>div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkInOutInfo p {
+  font-size: 20px;
+  color: #494949;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.checkInOutInfo p.space {
+  margin-bottom: 10px;
+}
+
+.checkInOutInfo p:nth-child(1) {
+  width: 100%;
+}
+
+.checkInOutInfo p:nth-child(3) {
+  width: 100%;
+}
+
+.checkInOutInfo p span {
+  display: block;
+  font-size: 16px;
+  color: #424242;
+}
+
+.total-price-wrap{
+  padding: 20px;
+  font-size: 1.2em;
+}
+
+
+.cla-btn{
+  width: 80%;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 5px;
+}

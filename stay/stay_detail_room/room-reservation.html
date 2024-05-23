@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>room-reservation</title>
+    <link rel="stylesheet" href="../stay_detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="../stay_detail.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  
+
+</head>
+<body>
+    <header class="header">
+        <div  class="menu">
+            <a href="마이페이지로 이동" class="mypage">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+        <div>로고</div>
+        <div class="menu">
+            <a href="홈화면" class="mypage">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="reservation-img-wrap">
+        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20190808_213%2F1565269331998uYNKl_JPEG%2FKakaoTalk_20190707_152929203_23.jpg" alt="">
+    </div>
+    <div class="business-info">
+        <div id="room-name">객실 이름 1</div>
+        <div id="room-price">200,000원 (1박)</div>
+        <div id="room-capacity">최대 4인</div>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="">
+                    <div>홈</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>리뷰</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>객실예약</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>사진</div>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    <main class="main-content">
+        <section class="container">
+            <!-- 달력 -->
+
+            <form action="">
+
+                <div class="calendar-wrap">
+                    <div class="calendar-middle-wrap">
+                      <div class="cal_nav">
+                        <a href="javascript:;" class="nav-btn go-prev"></a>
+                        <span class="year-month start-year-month"></span>
+                        <a href="javascript:;" class="nav-btn go-next"></a>
+                      </div>
+                      <div class="cal_wrap">
+                        <div class="days">
+                          <div class="day">일</div>
+                          <div class="day">월</div>
+                          <div class="day">화</div>
+                          <div class="day">수</div>
+                          <div class="day">목</div>
+                          <div class="day">금</div>
+                          <div class="day">토</div>
+                        </div>
+                        <div class="dates start-calendar"></div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="checkInOutInfo">
+                      <div>
+                        <p>
+                          <span>체크인</span>
+                          <label id="check_in_day"></label>
+                        </p>
+                        <p class="space">~</p>
+                        <p>
+                          <span>체크아웃</span>
+                          <label id="check_out_day"></label>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="total-price-wrap"><span class="total-price">예상 금액은 </span><span>(계산한 금액)n박*금액</span><span> 원 입니다.</span></div>
+                    <button type="submit" class="cla-btn">예약하기</button>
+                  </div>
+
+
+            </form>
+            
+
+                
+
+               
+           
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2024. 함께하개 All Rights Reserved</p>
+    </footer>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    
+
+</body>
+</html>

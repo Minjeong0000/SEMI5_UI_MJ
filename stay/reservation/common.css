@@ -20,7 +20,7 @@ html {
 
 body {
     font-family: NanumSquareR;
-
+    width: 430px;
 }
 
 a {
@@ -59,7 +59,7 @@ ul {
 }
 
 .checkInOutInfo {
-    width: 30%;
+    width: 430px;
     display: flex;
     justify-content: center;
     align-items: center;
