@@ -148,6 +148,8 @@
   .qna-container {
     padding: 20px;
     background-color: #f9f9f9;
+    display: grid;
+    grid-template-rows: auto;
   
   }
   
@@ -157,9 +159,9 @@
   
   .qna-wrap {
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 10px;
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr ;
   }
   
   .form-group {
@@ -225,7 +227,8 @@
   }
   .content-wrap{
     border-top: 1px solid gray;
-    padding-top: 20px;
+    padding: 20px;
+    
   }
   .detail-info{
     font-size: 0.7em;
