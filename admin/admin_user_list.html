@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>stay_register_list</title>
-  <link rel="stylesheet" href="./stay_register_list.css">
+  <title>user_list</title>
+  <link rel="stylesheet" href="./admin_user_list.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-  <script defer src="./stay_register_list.js"></script>
+  <script defer src="./admin_user_list.js"></script>
 
 
 </head>
@@ -24,7 +24,7 @@
       <input type="hidden" name="mid" value="dd">
       <select name="search_target" class="exlSt">
         <option value="title">아이디</option>
-        <option value="content">상호명</option>
+        <option value="content">닉네임</option>
       </select>
       <input type="text" maxlength="40" class="exlSt" name="search_keyword">
       <span class="button">
@@ -35,8 +35,8 @@
     <nav>
         <ul>
             <li><a href="#">전체</a></li>
-            <li><a href="#">미승인</a></li>
-            <li><a href="#">승인완료</a></li>
+            <li><a href="#">일반회원</a></li>
+            <li><a href="#">사업자</a></li>
         </ul>
     </nav>
     <main>
@@ -47,8 +47,8 @@
                 <tr>
                   <th>번호</th>
                   <th>아이디</th>
-                  <th>상호명</th>
-                  <th>요청일</th>
+                  <th>닉네임</th>
+                  <th>가입일자</th>
                   <th><input type="checkbox" id ="selectAll"></th>
                 </tr>
               </thead>
@@ -56,7 +56,7 @@
                 <tr>
                  
                   <td>1</td>
-                  <td>biz01</td>
+                  <td>user01</td>
                   <td> <a href="/admin/stay-register-approve 쿼리스트링">광남이네</a></td>
                   <td>24/05/15</td>
                   <td><input type="checkbox" class="ck" value="${vo.no}"></td>
@@ -64,24 +64,24 @@
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>biz02</td>
-                  <td><a href="/admin/stay-register-approve">ㅇㅇ호텔</a></td>
+                  <td>user02</td>
+                  <td><a href="/admin/stay-register-approve">닉네임02</a></td>
                   <td>24/05/15</td>
                   <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>biz03</td>
-                  <td><a href="/admin/stay-register-approve">ㅇㅇ펜션</a></td>
+                  <td>user03</td>
+                  <td><a href="/admin/stay-register-approve">닉네임03</a></td>
                   <td>24/05/15</td>
                   <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td>biz04</td>
-                  <td><a href="/admin/stay-register-approve">ㅇㅇ캠핑장</a></td>
+                  <td>user04</td>
+                  <td><a href="/admin/stay-register-approve">닉네임04</a></td>
                   <td>24/05/15</td>
                   <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
@@ -89,53 +89,60 @@
                 <tr>       
                   <td>5</td>
                   <td>biz05</td>
-                  <td><a href="/admin/stay-register-approve">ㅇㅇ게스트하우스</a></td>
+                  <td><a href="/admin/stay-register-approve">ㅇㅇㅇㅇ</a></td>
                   <td>24/05/15</td>
                   <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>       
                   <td>6</td>
-                  <td>biz06</td>
-                  <td><a href="/admin/stay-register-approve">무슨무슨캠핑장</a></td>
+                  <td>user06</td>
+                  <td><a href="/admin/stay-register-approve">ㅋㅋㅋ</a></td>
                   <td>24/05/15</td>
                   <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>       
                   <td>7</td>
-                  <td>biz07</td>
-                  <td><a href="/admin/stay-register-approve">ㅇㅇㅇㅇㅇ게스트하우스</a></td>
+                  <td>user07</td>
+                  <td><a href="/admin/stay-register-approve">닉넴1234</a></td>
                   <td>24/05/15</td>
                   <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>       
                   <td>8</td>
-                  <td>biz08</td>
-                  <td><a href="/admin/stay-register-approve">ㅇㅇ게스트하우스</a></td>
+                  <td>user08</td>
+                  <td><a href="/admin/stay-register-approve">닉 ㅇㅇ</a></td>
                   <td>24/05/15</td>
                   <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>       
                   <td>9</td>
-                  <td>biz09</td>
-                  <td><a href="/admin/stay-register-approve">ㅇㅇ게스트하우스</a></td>
+                  <td>user09</td>
+                  <td><a href="/admin/stay-register-approve">닉네임55</a></td>
                   <td>24/05/15</td>
                   <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>       
                   <td>10</td>
-                  <td>biz10</td>
-                  <td><a href="/admin/stay-register-approve">굉장히 긴 이름의 게스트하우스</a></td>
+                  <td>user10</td>
+                  <td><a href="/admin/stay-register-approve">닉네임10</a></td>
                   <td>24/05/15</td>
                   <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
               </tbody>
-              <tfoot><td colspan="5"><div><button onclick="approveRegister();">승인하기</button></div></td></tfoot>
+              <tfoot>
+                <td colspan="5">
+                  <div>
+                    <div><button onclick="banUser();">활동제한</button></div>
+                    <div><button onclick="deleteUser();">추방하기</button></div>
+                  </td>
+
+              </tfoot>
             </table>
 
 
