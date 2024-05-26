@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-  
+  <script defer src="./stay_register_list.js"></script>
 
 
 </head>
@@ -49,7 +49,7 @@
                   <th>아이디</th>
                   <th>상호명</th>
                   <th>요청일</th>
-                  <th><input type="checkbox" onclick=""></th>
+                  <th><input type="checkbox" id ="selectAll"></th>
                 </tr>
               </thead>
               <tbody>
@@ -59,7 +59,7 @@
                   <td>biz01</td>
                   <td> <a href="/admin/stay-register-approve 쿼리스트링">광남이네</a></td>
                   <td>24/05/15</td>
-                  <td><input type="checkbox" value="${vo.no}"></td>
+                  <td><input type="checkbox" class="ck" value="${vo.no}"></td>
                   
                 </tr>
                 <tr>
@@ -67,7 +67,7 @@
                   <td>biz02</td>
                   <td><a href="/admin/stay-register-approve">ㅇㅇ호텔</a></td>
                   <td>24/05/15</td>
-                  <td><input type="checkbox" value="${vo.no}"></td>
+                  <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>
@@ -75,7 +75,7 @@
                   <td>biz03</td>
                   <td><a href="/admin/stay-register-approve">ㅇㅇ펜션</a></td>
                   <td>24/05/15</td>
-                  <td><input type="checkbox" value="${vo.no}"></td>
+                  <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>
@@ -83,7 +83,7 @@
                   <td>biz04</td>
                   <td><a href="/admin/stay-register-approve">ㅇㅇ캠핑장</a></td>
                   <td>24/05/15</td>
-                  <td><input type="checkbox" value="${vo.no}"></td>
+                  <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>       
@@ -91,7 +91,7 @@
                   <td>biz05</td>
                   <td><a href="/admin/stay-register-approve">ㅇㅇ게스트하우스</a></td>
                   <td>24/05/15</td>
-                  <td><input type="checkbox" value="${vo.no}"></td>
+                  <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>       
@@ -99,7 +99,7 @@
                   <td>biz06</td>
                   <td><a href="/admin/stay-register-approve">무슨무슨캠핑장</a></td>
                   <td>24/05/15</td>
-                  <td><input type="checkbox" value="${vo.no}"></td>
+                  <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>       
@@ -107,7 +107,7 @@
                   <td>biz07</td>
                   <td><a href="/admin/stay-register-approve">ㅇㅇㅇㅇㅇ게스트하우스</a></td>
                   <td>24/05/15</td>
-                  <td><input type="checkbox" value="${vo.no}"></td>
+                  <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>       
@@ -115,7 +115,7 @@
                   <td>biz08</td>
                   <td><a href="/admin/stay-register-approve">ㅇㅇ게스트하우스</a></td>
                   <td>24/05/15</td>
-                  <td><input type="checkbox" value="${vo.no}"></td>
+                  <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>       
@@ -123,7 +123,7 @@
                   <td>biz09</td>
                   <td><a href="/admin/stay-register-approve">ㅇㅇ게스트하우스</a></td>
                   <td>24/05/15</td>
-                  <td><input type="checkbox" value="${vo.no}"></td>
+                  <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
                 <tr>       
@@ -131,11 +131,11 @@
                   <td>biz10</td>
                   <td><a href="/admin/stay-register-approve">굉장히 긴 이름의 게스트하우스</a></td>
                   <td>24/05/15</td>
-                  <td><input type="checkbox" value="${vo.no}"></td>
+                  <td><input type="checkbox" class="ck" value="${vo.no}"></td>
 
                 </tr>
               </tbody>
-              <tfoot><td colspan="5"><div><button>✅승인하기</button></div></td></tfoot>
+              <tfoot><td colspan="5"><div><button onclick="approveRegister();">✅승인하기</button></div></td></tfoot>
             </table>
 
 
