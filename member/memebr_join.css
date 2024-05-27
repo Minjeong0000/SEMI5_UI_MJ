@@ -1,405 +1,271 @@
-/* 배경색 */
-body {background-color: #334d8f
-}
-
-/* 메인 div */
-
-#main {  
-width: 80%;
-height: 100vh;         /* vh는 % 같은 개념 */
-margin: 0 auto;       /* 가운데 정렬 */ 
-margin-top: 160px;
-border-radius: 15px;
-background: #FFFFFF;
-
-#nameT {
-
-  position: absolute;
-width: 400px;
-height: 50px;
-left: 200px;
-top: 160px;
-
-}
-
-#nickNameT {
-
-  position: absolute;
-width: 400px;
-height: 50px;
-left: 200px;
-top: 280px;
-
-}
 
 
-#idT {
-
-  position: absolute;
-width: 400px;
-height: 50px;
-left: 200px;
-top: 400px;
-
-}
-
-#pwdT {
-
-  position: absolute;
-width: 400px;
-height: 50px;
-left: 200px;
-top: 520px;
-
-}
-
-#pwdCheckT {
-
-  position: absolute;
-width: 400px;
-height: 50px;
-left: 200px;
-top: 640px;
-
-}
-
-#phoneNumT {
-
-  position: absolute;
-width: 400px;
-height: 50px;
-left: 200px;
-top: 760px;
-
-}
-
-#E-mailT {
-
-  position: absolute;
-width: 400px;
-height: 50px;
-left: 200px;
-top: 880px;
-
-}
-
-#birthT {
-
-  position: absolute;
-width: 400px;
-height: 50px;
-left: 200px;
-top: 1000px;
-
-}
-
-#addressT {
-
-  position: absolute;
-width: 400px;
-height: 50px;
-left: 200px;
-top: 1120px;
-
-}
-
-
-#petInfoT {
-
-  position: absolute;
-width: 400px;
-height: 50px;
-left: 200px;
-top: 1240px;
-
-}
-
-/* 제목 */
-#title {
-  position: absolute;
-  top: 2%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* 정확한 중앙 정렬 */
-  
-}
-
-/* 뒤로가기 */
-#backbtn {
-position: absolute;
-width: 30px;
-height: 30px;
-left: 5px;
-top: 90px;
-}
-
-
-
-
-}
-
-/* 이름 */
-#name {
-box-sizing: border-box;
-
-position: absolute;
-width: 400px;
-height: 50px;
-left: 200px;
-top: 230px;
-
-background: #FFFFFF;
-border: 1px solid #969696;
-border-radius: 5px;
-}
-
-/* 닉네임 */
-#nickname {
+/* 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  
-  position: absolute;
-  width: 400px;
-  height: 50px;
-  left: 200px;
-  top: 350px;
-  
-  background: #FFFFFF;
-  border: 1px solid #969696;
-  border-radius: 5px;
-  }
+  font-family: "Noto Sans KR", sans-serif;
+}
 
- /* 닉네임 중복체크 */
-  #checkbtn1 {
+body {
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-rows: 40px auto 50px;
+  height: 100vh;
+  width: 430px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
 
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    left: 650px;
-    top: 350px;
+/* 헤더 스타일 */
+header {
+  background-color: #334D8F;
+  color: white;
+  padding: 0 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    border-radius: 5px;
-  }
+.SchBox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #334D8F;
+}
 
-  /*----------------------------------------------------------------- */
+header .SchBox form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
 
-/* 아이디 */
-  #id {
-    box-sizing: border-box;
-    
-    position: absolute;
-    width: 400px;
-    height: 50px;
-    left: 200px;
-    top: 470px;
-    
-    background: #FFFFFF;
-    border: 1px solid #969696;
-    border-radius: 5px;
-    }
+header .menu {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-     /* 닉네임 중복체크 */
-    #checkbtn2 {
+.menu a {
+  text-decoration: none;
+  color: azure;
+}
 
-      position: absolute;
-      width: 100px;
-      height: 50px;
-      left: 650px;
-      top: 470px;
-      border-radius: 5px;
-    }
+/* 네비게이션 스타일 */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
 
-/* 비밀번호 */
-    #pwd {
-      box-sizing: border-box;
-      
-      position: absolute;
-      width: 400px;
-      height: 50px;
-      left: 200px;
-      top: 590px;
-      
-      background: #FFFFFF;
-      border: 1px solid #969696;
-      border-radius: 5px;
-      }
+nav::-webkit-scrollbar {
+  display: none;
+}
 
-/* 비밀번호 확인 */
-      #pwdCheck {
-        box-sizing: border-box;
-        
-        position: absolute;
-        width: 400px;
-        height: 50px;
-        left: 200px;
-        top: 710px;
-        
-        background: #FFFFFF;
-        border: 1px solid #969696;
-        border-radius: 5px;
-        }
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
 
-/* 휴대폰번호 */
-        #phoneNum {
-          box-sizing: border-box;
-          
-          position: absolute;
-          width: 400px;
-          height: 50px;
-          left: 200px;
-          top: 830px;
-          
-          background: #FFFFFF;
-          border: 1px solid #969696;
-          border-radius: 5px;
-          }
+nav ul li {
+  margin: none;
+}
 
-/* 이메일 */
-          #email {
-            box-sizing: border-box;
-            
-            position: absolute;
-            width: 400px;
-            height: 50px;
-            left: 200px;
-            top: 950px;
-            
-            background: #FFFFFF;
-            border: 1px solid #969696;
-            border-radius: 5px;
-            }
+nav ul li a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  font-size: 0.7em;
+}
 
-/* 이메일 도메인 주소 */
-            #mailDomain {
-              box-sizing: border-box;
-              
-              position: absolute;
-              width: 400px;
-              height: 50px;
-              left: 650px;
-              top: 950px;
-              
-              background: #FFFFFF;
-              border: 1px solid #969696;
-              border-radius: 5px;
-              }
-  
-  
-/* 생년월일 */
-#birthday {
- 
-              
-  position: absolute;
-  width: 400px;
-  height: 50px;
-  left: 200px;
-  top: 1070px;
-  
-  background: #FFFFFF;
-  border: 1px solid #969696;
-  border-radius: 5px;
+nav ul li a:hover {
+  background-color: #111;
+}
+
+/* 메인 콘텐츠 스타일 */
+main {
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+main section {
+  flex: 1;
+}
+
+/* 푸터 스타일 */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 0.5em;
+}
+
+.page-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.page-area {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.page-area a {
+  text-decoration: none;
+}
 
 
+/* ========질문작성css========= */
+/* main section 스타일 */
+/* qna_insert.css */
+/* 이 부분은 별도의 CSS 파일에 저장해 사용 */
+
+/* 질문 작성하기 페이지의 스타일 */
+.qna-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: grid;
+  grid-template-rows: auto;
 
 }
 
-/* 주소 */
-#address {
-
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 600px;
-  height: 50px;
-  left: 200px;
-  top: 1190px;
-  
-  background: #FFFFFF;
-  border: 1px solid #969696;
-  border-radius: 5px;
-
+.qna-container h2 {
+  margin-bottom: 20px;
 }
 
-/* 반려견 정보 입력 */
-/*성별*/
-#gender {
-
-box-sizing: border-box;
-              
-position: absolute;
-width: 100px;
-height: 50px;
-left: 200px;
-top: 1310px;
-
-background: #FFFFFF;
-border: 1px solid #969696;
-border-radius: 5px;
-
+.qna-wrap {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr ;
 }
 
-/*몸무게*/
-#weight {
-
-  box-sizing: border-box;
-              
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  left: 400px;
-  top: 1310px;
-  
-  background: #FFFFFF;
-  border: 1px solid #969696;
-  border-radius: 5px;
-
+.form-group {
+  margin-bottom: 20px;
 }
 
-/*나이*/
-#age {
-
-  box-sizing: border-box;
-              
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  left: 600px;
-  top: 1310px;
-  
-  background: #FFFFFF;
-  border: 1px solid #969696;
-  border-radius: 5px;
-
+label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-/*회원가입 버튼*/
-#join {
-
-  box-sizing: border-box;
-              
-  position: absolute;
-  width: 300px;
-  height: 100px;
-  left: 450px;
-  top: 1400px;
-  
-  background: #FFFFFF;
-  border: 1px solid #969696;
+input[type="text"],
+input[type ="password"],
+input[type ="email"],
+input[type="file"],
+textarea,
+#memberjoin,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-
 }
 
-/*뒤로가기 버튼*/ 
-#back {
 
-  box-sizing: border-box;
-              
-  position: absolute;
-  width: 300px;
-  height: 100px;
-  left: 850px;
-  top: 1400px;
-  
-  background: #FFFFFF;
-  border: 1px solid #969696;
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"],#memberjoin{
+  background-color: #334D8F;
+  color: white;
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+#memberjoin{
+  margin-top: 20px;
+}
 
+button[type="submit"]:hover {
+  background-color: #293e6a;
+}
+
+/* 게시글 상세보기 페이지의 스타일 */
+.post-details {
+  width: 100%;
+  margin: 0 auto;
+  display: grid; /* 요소들을 가로로 배열 */
+  grid-template-rows: 1.5fr 1fr;
+}
+
+.detail-item {
+  margin-bottom: 15px;
+  margin-right: 20px; /* 각 요소 사이에 간격을 주기 위해 오른쪽 마진 추가 */
+}
+
+.detail-item label {
+  font-weight: bold;
+  font-size: 0.8em; /* 작은 글씨로 설정 */
+}
+
+.detail-item p {
+  margin-top: 5px;
+  font-size: 0.8em; /* 작은 글씨로 설정 */
+}
+
+.detail-item p.content {
+  font-size: 1em; /* 원래 크기로 설정 */
+}
+.content-wrap{
+  border-top: 1px solid gray;
+  padding: 20px;
+  
+}
+.detail-info{
+  font-size: 0.7em;
+}
+.detail-info>span{
+  padding-right: 2px;
+  padding-left: 1px;
+  border-right: 1px solid gray;
+}
+
+.edit-delete{
+  background-color: #334D8F;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.edit-delete:hover{
+  background-color: #293e6a;
+}
+.button-wrap{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.payment{
+  display: inline-block
 }

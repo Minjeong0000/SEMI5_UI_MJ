@@ -92,3 +92,11 @@ body, html {
   .tab:not(.active):hover {
       background-color: #f0f0f0;
   }
+
+  .container > form{
+    display: none;
+  }
+
+  .container > form.active {
+    display: block;
+  }

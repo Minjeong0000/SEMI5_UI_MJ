@@ -10,16 +10,38 @@
 </head>
 <body>
     <div class="container">
-        <h2>로그인페이지</h2>
+       
         <div class="tabs">
-            <button id="generalTab" class="tab active">회원</button>
-            <button id="businessTab" class="tab">사업자</button>
-            <button id="adminTab" class="tab">관리자</button>
+            <button onclick="changeFormMember()" id="generalTab" class="tab active">회원</button>
+            <button onclick="changeFormBiz()" id="businessTab" class="tab">사업자</button>
+            <button onclick="changeFormAdmin()" id="adminTab" class="tab">관리자</button>
         </div>
-        <form id="loginForm">
+        <form id="loginForm" class="active">
             <div class="input-group">
                 <label for="username">아이디</label>
-                <input type="text" id="username" name="username" placeholder="아이디를 입력하세요">
+                <input type="text" id="userId" name="id" placeholder="아이디를 입력하세요">
+            </div>
+            <div class="input-group">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <form id="bizLoginForm">
+            <div class="input-group">
+                <label for="username">사업자 아이디</label>
+                <input type="text" id="userId" name="id" placeholder="아이디를 입력하세요">
+            </div>
+            <div class="input-group">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <form id="adminLoginForm">
+            <div class="input-group">
+                <label for="username">관리자 아이디</label>
+                <input type="text" id="userId" name="id" placeholder="아이디를 입력하세요">
             </div>
             <div class="input-group">
                 <label for="password">비밀번호</label>
